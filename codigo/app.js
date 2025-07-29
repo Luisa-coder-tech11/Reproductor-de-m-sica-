@@ -8,4 +8,7 @@ angular.module("Reproductor",[])
     .then(function(datos){
         $scope.artistas=datos.data.Artistas;
     });
+    $scope.seleccionarArtistas=function (artista){
+        $scope.canciones=artista.canciones;
+    }
 });
