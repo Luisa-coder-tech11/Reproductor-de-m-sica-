@@ -29,12 +29,16 @@ h1 {
     max-width: 900px;
     text-align: center;
 }
-.artistas{
-   display: flex;
-    flex-wrap: wrap; /* Permite que las columnas se apilen en pantallas pequeñas */
-    gap: 30px; /* Espacio entre las secciones */
+
+.artistas {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las columnas se apilen en pantallas pequeñas */
+    gap: 30px;
+    /* Espacio entre las secciones */
     margin-bottom: 30px;
-    justify-content: center; /* Centra las columnas si no hay espacio completo */ 
+    justify-content: center;
+    /* Centra las columnas si no hay espacio completo */
 }
 
 h2 {
@@ -44,16 +48,22 @@ h2 {
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-.listaArtistas, .listacanciones{
-    flex: 1; /* Permite que ambas secciones crezcan y ocupen el espacio */
-    min-width: 280px; /* Ancho mínimo para cada columna */
+
+.listaArtistas,
+.listaCanciones {
+    flex: 1;
+    /* Permite que ambas secciones crezcan y ocupen el espacio */
+    min-width: 280px;
+    /* Ancho mínimo para cada columna */
     background-color: white;
     border-radius: 10px;
     padding: 20px;
     box-shadow: inset 0 1px 5px black;
 }
-.listaArtistas ul, .listacanciones ul {
-        list-style: none;
+
+.listaArtistas ul,
+.listaCanciones ul {
+    list-style: none;
     padding: 0;
     margin: 0;
     max-height: 350px;
@@ -64,11 +74,25 @@ h2 {
     background-color: #ffffff;
 }
 
-.listaArtistas li, .listacanciones li{
+.listaArtistas li,
+.listaCanciones li {
     padding: 12px 15px;
     cursor: pointer;
     border-bottom: 1px solid #eee;
     text-align: left;
     transition: background-color 0.2s ease, color 0.2s ease;
-    font-size: 1.1em;   
+    font-size: 1.1em;
+}
+
+.reproductor {
+    background-color: #e0f2f7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reproductor h3 {
+    color: #00796b;
+    margin-top: 0;
 }
